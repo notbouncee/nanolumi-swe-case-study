@@ -26,4 +26,9 @@ nanolumi-swe-case-study/
 ```
 
 7. Now I need to create an Agent Plan document detailing what my AI Agent should do to help me build this product.
-8.
+8. I asked the AI Agent to follow the product plan to create the fullstack web application in 2 phases: Phase 1 - Backend and Phase 2 - Frontend
+9. In Phase 1, the agent created the fullstack web application with the backend. However there were some issues with the backend implementation:
+    a. I missed out on a ORM to use initially and decided to use tortoiseORM as I have used it before. 
+    b. Mock http request was used in order to test the backend quickly without the full application. However, a seperate test was created for E2E test. 
+    
+    

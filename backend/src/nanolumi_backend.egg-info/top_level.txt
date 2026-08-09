@@ -1,0 +1,6 @@
+api
+client
+core
+main
+repository
+service
