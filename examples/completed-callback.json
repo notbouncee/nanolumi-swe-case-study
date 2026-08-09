@@ -1,0 +1,14 @@
+{
+  "request_id": "req-demo-001",
+  "event_id": "evt-demo-001",
+  "device_id": "device-001",
+  "status": "completed",
+  "recorded_at": "2026-07-11T03:15:05Z",
+  "sequence_number": 1842,
+  "readings": {
+    "ph": 7.18,
+    "temperature_c": 27.4,
+    "turbidity_ntu": 1.6,
+    "dissolved_oxygen_mg_l": 6.2
+  }
+}

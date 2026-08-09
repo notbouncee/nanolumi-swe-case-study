@@ -1,0 +1,11 @@
+{
+  "request_id": "req-demo-001",
+  "requested_at": "2026-07-11T03:15:00Z",
+  "callback_url": "http://host.docker.internal:8000/api/device-results",
+  "parameters": [
+    "ph",
+    "temperature_c",
+    "turbidity_ntu",
+    "dissolved_oxygen_mg_l"
+  ]
+}

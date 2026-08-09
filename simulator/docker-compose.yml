@@ -1,0 +1,16 @@
+services:
+  simulator:
+    image: water-quality-simulator:1.0.0
+    ports:
+      - "${SIMULATOR_PORT:-9000}:9000"
+    environment:
+      PORT: "9000"
+      LOG_LEVEL: "${LOG_LEVEL:-INFO}"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - simulator-data:/data
+    restart: unless-stopped
+
+volumes:
+  simulator-data:
