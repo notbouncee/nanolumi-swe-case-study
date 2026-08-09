@@ -1,0 +1,29 @@
+# General
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Node / React (Frontend)
+node_modules/
+dist/
+build/
+.npm/
+
+# Python (Backend)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Docker / Database Data
+pgdata/
