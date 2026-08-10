@@ -28,6 +28,7 @@ env/
 .pytest_cache/
 .coverage
 htmlcov/
+*.egg-info/
 
 # Docker / Database Data
 pgdata/
