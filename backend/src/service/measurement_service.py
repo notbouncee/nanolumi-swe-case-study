@@ -22,7 +22,9 @@ async def get_device_measurements(device_id: str) -> list[dict]:
             "requested_at": m.requested_at,
             "completed_at": m.completed_at,
             "ph": m.ph,
-            "temperature_c": m.temperature_c
+            "temperature_c": m.temperature_c,
+            "turbidity_ntu": m.turbidity_ntu,
+            "dissolved_oxygen_mg_l": m.dissolved_oxygen_mg_l
         }
         for m in measurements
     ]
@@ -115,6 +117,8 @@ async def process_webhook(request_id: str, status: str, results: dict | None) ->
     if results:
         measurement.ph = cast(float, results.get("ph"))
         measurement.temperature_c = cast(float, results.get("temperature_c"))
+        measurement.turbidity_ntu = cast(float, results.get("turbidity_ntu"))
+        measurement.dissolved_oxygen_mg_l = cast(float, results.get("dissolved_oxygen_mg_l"))
 
     await measurement.save()
     return {"message": "Webhook processed successfully"}

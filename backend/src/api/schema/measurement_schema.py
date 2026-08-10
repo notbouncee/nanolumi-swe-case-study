@@ -16,6 +16,8 @@ class MeasurementResponse(BaseModel):
 class MeasurementResults(BaseModel):
     ph: Optional[float] = None
     temperature_c: Optional[float] = None
+    turbidity_ntu: Optional[float] = None
+    dissolved_oxygen_mg_l: Optional[float] = None
 
 
 class WebhookPayload(BaseModel):

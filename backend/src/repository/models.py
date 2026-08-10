@@ -41,6 +41,8 @@ class DeviceMeasurement(models.Model):
 
     ph = fields.FloatField(null=True)
     temperature_c = fields.FloatField(null=True)
+    turbidity_ntu = fields.FloatField(null=True)
+    dissolved_oxygen_mg_l = fields.FloatField(null=True)
 
     class Meta:
         table = "device_measurements"
