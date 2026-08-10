@@ -45,7 +45,7 @@ export function DeviceModal({ device, onClose }: DeviceModalProps) {
   useEffect(() => {
     if (!device) return;
     const hasActiveMeasurement = measurements.some(
-      (m) => m.status === "pending" || m.status === "acknowledged" || m.status === "delayed"
+      (m) => m.status === "pending" || m.status === "acknowledged"
     );
 
     if (hasActiveMeasurement) {
@@ -83,7 +83,7 @@ export function DeviceModal({ device, onClose }: DeviceModalProps) {
   };
 
   const latest = measurements[0];
-  const hasActiveRequest = requesting || (latest && ["pending", "acknowledged", "delayed"].includes(latest.status));
+  const hasActiveRequest = requesting || (latest && ["pending", "acknowledged"].includes(latest.status));
 
   return (
     <Dialog open={!!device} onOpenChange={(open) => !open && onClose()}>
