@@ -3,7 +3,6 @@ from typing import List, Optional
 
 
 class MeasurementRequest(BaseModel):
-    device_id: str
     parameters: List[str]
 
 

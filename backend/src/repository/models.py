@@ -9,6 +9,7 @@ class MeasurementStatus(str, Enum):
     failed = "failed"
     delayed = "delayed"
     rejected = "rejected"
+    incomplete = "incomplete"
 
 
 class Device(models.Model):

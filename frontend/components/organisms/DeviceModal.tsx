@@ -77,6 +77,7 @@ export function DeviceModal({ device, onClose }: DeviceModalProps) {
       case "rejected": return "bg-red-500 hover:bg-red-600 text-white";
       case "delayed": return "bg-yellow-500 hover:bg-yellow-600 text-white";
       case "acknowledged": return "bg-blue-500 hover:bg-blue-600 text-white";
+      case "incomplete": return "bg-gray-400 hover:bg-gray-500 text-white";
       default: return "bg-gray-500 hover:bg-gray-600 text-white";
     }
   };

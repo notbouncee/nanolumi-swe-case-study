@@ -14,6 +14,10 @@ node_modules/
 dist/
 build/
 .npm/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
 
 # Python (Backend)
 __pycache__/
@@ -27,3 +31,21 @@ htmlcov/
 
 # Docker / Database Data
 pgdata/
+# Web specific logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Framework specifics
+dist-ssr/
+*.local
+
+# Editor directories and files
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
